@@ -7,7 +7,17 @@ default = ["system"]
 
 [fetch.nixpkgs]
 name = "nixpkgs"
-import = true
+type = "import"
+
+[fetch.lib]
+name = "nixpkgs"
+type = "import"
+subdir = "lib"
+
+[fetch.nixos-lib]
+name = "nixpkgs"
+type = "import"
+subdir = "nixos/lib"
 
 [backend.nix]
 fetcher = "npins"
