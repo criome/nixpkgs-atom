@@ -1,9 +1,7 @@
 [atom]
 id = "nixpkgs-atom"
 version = "0.1.0"
-
-[features]
-default = ["system"]
+system = true
 
 [fetch.nixpkgs]
 name = "nixpkgs"
