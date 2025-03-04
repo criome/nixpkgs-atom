@@ -18,4 +18,4 @@ type = "import"
 subdir = "nixos/lib"
 
 [backend.nix]
-fetcher = "npins"
+fetcher = "flake-lock"

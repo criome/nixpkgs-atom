@@ -1,9 +1,9 @@
 {
-  Lib = use.lib;
+  Lib = get.lib;
 
-  Nixos-lib = use.nixos-lib { inherit (mod) lib; };
+  Nixos-lib = get.nixos-lib { inherit (mod) lib; };
 
-  Pkgs = use.nixpkgs {
+  Pkgs = get.nixpkgs {
     inherit system;
   };
 }
